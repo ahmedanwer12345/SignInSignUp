@@ -28,7 +28,7 @@ const Login = () => {
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
-                        <Link to="/">Go to Home page</Link>
+                        <Link to="/SignInSignUp">Go to Home page</Link>
                     </p>
                 </section>
             ) : (
@@ -52,7 +52,7 @@ const Login = () => {
                     </form>
                     <p>
                         Need an Account?<br />
-                        <Link to="/" >Sign Up</Link>
+                        <Link to="/SignInSignUp" >Sign Up</Link>
                     </p>
                 </section>
             )}
