@@ -28,17 +28,17 @@ const Register = () => {
     }, [])
     useEffect(() => {
         setValidUser(NAME_REGEX.test(user));
-    }, [user])
+    }, [user , NAME_REGEX])
 
 
     useEffect(() => {
         setValidEmail(EMAIL_REGEX.test(email));
-    }, [email])
+    }, [email , EMAIL_REGEX ])
     useEffect(() => {
         setValidPass(PASS_REGEX.test(pass));
         setValidConfirmPass(pass === confirmPass);
 
-    }, [confirmPass, pass])
+    }, [confirmPass, pass ,PASS_REGEX])
 
     const handleSubmit = (e) => {
         e.preventDefault();
