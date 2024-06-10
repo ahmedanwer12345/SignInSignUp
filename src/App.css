@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.register input {
+  padding: 10px;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.register label {
+  margin: 10px 0px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.login input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.login label {
+  margin: 10px 0px;
+}
+
+.btn {
+  padding: 10px 0px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.hide {
+  position: absolute;
+  left: -9999px;
+}
+
+.show {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+}
+
+.show>svg {
+  margin-right: 0.25rem;
+}
+
+
+
+.check {
+  color: green;
+  margin-left: 0.25rem;
+
+}
+
+.time {
+  color: red;
+  margin-left: 0.25rem;
+
+}
+
+.log {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
